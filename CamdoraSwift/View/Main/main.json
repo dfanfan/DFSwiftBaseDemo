@@ -1,0 +1,11 @@
+[
+  {
+    "clsName" : "DFHomeViewController",
+    "imageName" : "home_normal"
+  },
+
+  {
+    "clsName" : "DFMeViewController",
+    "imageName" : "account_normal"
+  }
+]

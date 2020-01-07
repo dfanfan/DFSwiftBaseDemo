@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.5.1)
+  - DZNEmptyDataSet (1.8.1)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.14)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - MBProgressHUD
+  - MJRefresh
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: 6642e35b3227a5447b9fd5e17c552c90196c9859
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: f150d96f4409a5df12afddaf25df833c55136d54
+
+COCOAPODS: 1.2.0
