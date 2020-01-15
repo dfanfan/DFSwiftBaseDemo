@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F49153023CEBEC50078723F /* DFRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49152F23CEBEC50078723F /* DFRootTabBarController.swift */; };
+		6F49153223CEBF6E0078723F /* DFRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153123CEBF6E0078723F /* DFRootViewController.swift */; };
+		6F49153423CEBF980078723F /* DFRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153323CEBF980078723F /* DFRootNavigationController.swift */; };
+		6F49153723CEE19C0078723F /* DFIphoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153623CEE19C0078723F /* DFIphoneType.swift */; };
+		6F49153923CEE7CA0078723F /* DFMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153823CEE7CA0078723F /* DFMacros.swift */; };
+		6F49153B23CEEAC10078723F /* DFColorMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153A23CEEAC10078723F /* DFColorMacros.swift */; };
+		6F49153D23CEEAD10078723F /* DFFontMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153C23CEEAD10078723F /* DFFontMacros.swift */; };
+		6F49153F23CEEB7D0078723F /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49153E23CEEB7D0078723F /* UIColor+Utility.swift */; };
+		6F49154123CEFEB70078723F /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49154023CEFEB70078723F /* Bundle+Extensions.swift */; };
+		6F49154323CF01D70078723F /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F49154223CF01D70078723F /* main.json */; };
+		6F49154523CF01DE0078723F /* DFComposeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49154423CF01DE0078723F /* DFComposeButton.swift */; };
 		C7E83AEF134D4A1801E3DD8F /* Pods_CamdoraSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5298A425BD5A0B1C35C518EB /* Pods_CamdoraSwift.framework */; };
 		CE04AA5B1FA316A0001EC56C /* DFHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04AA5A1FA316A0001EC56C /* DFHud.swift */; };
 		CE04AA5E1FA33837001EC56C /* UITableView+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04AA5D1FA33837001EC56C /* UITableView+Empty.swift */; };
@@ -14,17 +25,8 @@
 		CE2959C01F8CE60E002220FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2959BF1F8CE60E002220FC /* Assets.xcassets */; };
 		CE2959C31F8CE60E002220FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2959C11F8CE60E002220FC /* LaunchScreen.storyboard */; };
 		CE2959CE1F8CE60E002220FC /* CamdoraSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2959CD1F8CE60E002220FC /* CamdoraSwiftTests.swift */; };
-		CE2959DF1F8CEB57002220FC /* DFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2959DE1F8CEB57002220FC /* DFTabBarController.swift */; };
-		CE2959E11F8CF8C1002220FC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = CE2959E01F8CF8C1002220FC /* main.json */; };
-		CE2959E51F8CFA6A002220FC /* DFCommont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2959E41F8CFA6A002220FC /* DFCommont.swift */; };
-		CE2959E71F8CFC9E002220FC /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2959E61F8CFC9D002220FC /* Bundle+Extensions.swift */; };
 		CE36A4E11F8E3A4400F0CECF /* RootNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A4E01F8E3A4400F0CECF /* RootNavigationTransition.swift */; };
 		CE36A4E31F8E3A6800F0CECF /* RootTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36A4E21F8E3A6800F0CECF /* RootTransitionAnimator.swift */; };
-		CE4B5B8C1F8DB2C900FD053B /* DFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B5B8B1F8DB2C900FD053B /* DFBaseViewController.swift */; };
-		CE4B5B8E1F8DB2F500FD053B /* DFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B5B8D1F8DB2F500FD053B /* DFNavigationController.swift */; };
-		CE4B5B931F8DB61900FD053B /* DFMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B5B921F8DB61900FD053B /* DFMeViewController.swift */; };
-		CE4B5B951F8DB63800FD053B /* DFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B5B941F8DB63800FD053B /* DFHomeViewController.swift */; };
-		CE4B5B971F8DCA5900FD053B /* DFComposeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B5B961F8DCA5900FD053B /* DFComposeButton.swift */; };
 		CE5A8FFA1F8F6D91003540E6 /* DFNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A8FF91F8F6D91003540E6 /* DFNetManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,17 @@
 /* Begin PBXFileReference section */
 		43AC1CEBAFF9ACC93E2B7001 /* Pods-CamdoraSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamdoraSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CamdoraSwift/Pods-CamdoraSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		5298A425BD5A0B1C35C518EB /* Pods_CamdoraSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CamdoraSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F49152F23CEBEC50078723F /* DFRootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFRootTabBarController.swift; sourceTree = "<group>"; };
+		6F49153123CEBF6E0078723F /* DFRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFRootViewController.swift; sourceTree = "<group>"; };
+		6F49153323CEBF980078723F /* DFRootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFRootNavigationController.swift; sourceTree = "<group>"; };
+		6F49153623CEE19C0078723F /* DFIphoneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFIphoneType.swift; sourceTree = "<group>"; };
+		6F49153823CEE7CA0078723F /* DFMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFMacros.swift; sourceTree = "<group>"; };
+		6F49153A23CEEAC10078723F /* DFColorMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFColorMacros.swift; sourceTree = "<group>"; };
+		6F49153C23CEEAD10078723F /* DFFontMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFFontMacros.swift; sourceTree = "<group>"; };
+		6F49153E23CEEB7D0078723F /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
+		6F49154023CEFEB70078723F /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		6F49154223CF01D70078723F /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		6F49154423CF01DE0078723F /* DFComposeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFComposeButton.swift; sourceTree = "<group>"; };
 		8F954695C9F43BD843DF1306 /* Pods-CamdoraSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamdoraSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CamdoraSwift/Pods-CamdoraSwift.release.xcconfig"; sourceTree = "<group>"; };
 		CE04AA5A1FA316A0001EC56C /* DFHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFHud.swift; sourceTree = "<group>"; };
 		CE04AA5D1FA33837001EC56C /* UITableView+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Empty.swift"; sourceTree = "<group>"; };
@@ -52,17 +65,8 @@
 		CE2959C91F8CE60E002220FC /* CamdoraSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamdoraSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2959CD1F8CE60E002220FC /* CamdoraSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamdoraSwiftTests.swift; sourceTree = "<group>"; };
 		CE2959CF1F8CE60E002220FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE2959DE1F8CEB57002220FC /* DFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFTabBarController.swift; sourceTree = "<group>"; };
-		CE2959E01F8CF8C1002220FC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		CE2959E41F8CFA6A002220FC /* DFCommont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCommont.swift; sourceTree = "<group>"; };
-		CE2959E61F8CFC9D002220FC /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		CE36A4E01F8E3A4400F0CECF /* RootNavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationTransition.swift; sourceTree = "<group>"; };
 		CE36A4E21F8E3A6800F0CECF /* RootTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTransitionAnimator.swift; sourceTree = "<group>"; };
-		CE4B5B8B1F8DB2C900FD053B /* DFBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFBaseViewController.swift; sourceTree = "<group>"; };
-		CE4B5B8D1F8DB2F500FD053B /* DFNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFNavigationController.swift; sourceTree = "<group>"; };
-		CE4B5B921F8DB61900FD053B /* DFMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFMeViewController.swift; sourceTree = "<group>"; };
-		CE4B5B941F8DB63800FD053B /* DFHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFHomeViewController.swift; sourceTree = "<group>"; };
-		CE4B5B961F8DCA5900FD053B /* DFComposeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFComposeButton.swift; sourceTree = "<group>"; };
 		CE5A8FF91F8F6D91003540E6 /* DFNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFNetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,62 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6F49152A23CEBCC60078723F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6F49152B23CEBCC60078723F /* Base */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		6F49152B23CEBCC60078723F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6F49153523CEE0B10078723F /* Ohter */,
+				6F49152C23CEBCC60078723F /* Controller */,
+				6F49152D23CEBCC60078723F /* Model */,
+				6F49152E23CEBCC60078723F /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6F49152C23CEBCC60078723F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F49154223CF01D70078723F /* main.json */,
+				6F49152F23CEBEC50078723F /* DFRootTabBarController.swift */,
+				6F49153123CEBF6E0078723F /* DFRootViewController.swift */,
+				6F49153323CEBF980078723F /* DFRootNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F49152D23CEBCC60078723F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F49152E23CEBCC60078723F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F49154423CF01DE0078723F /* DFComposeButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F49153523CEE0B10078723F /* Ohter */ = {
+			isa = PBXGroup;
+			children = (
+				6F49153623CEE19C0078723F /* DFIphoneType.swift */,
+				6F49153823CEE7CA0078723F /* DFMacros.swift */,
+				6F49153A23CEEAC10078723F /* DFColorMacros.swift */,
+				6F49153C23CEEAD10078723F /* DFFontMacros.swift */,
+			);
+			path = Ohter;
+			sourceTree = "<group>";
+		};
 		B21DE079602C15407BD8DB3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +173,9 @@
 		CE04AA5C1FA337F8001EC56C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6F49154023CEFEB70078723F /* Bundle+Extensions.swift */,
 				CE04AA5D1FA33837001EC56C /* UITableView+Empty.swift */,
+				6F49153E23CEEB7D0078723F /* UIColor+Utility.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -141,10 +203,8 @@
 		CE2959B71F8CE60E002220FC /* CamdoraSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6F49152A23CEBCC60078723F /* Class */,
 				CE2959DC1F8CEAEE002220FC /* Tools */,
-				CE2959D91F8CEAED002220FC /* Model */,
-				CE2959DA1F8CEAEE002220FC /* View */,
-				CE2959DB1F8CEAEE002220FC /* ViewModel */,
 				CE2959B81F8CE60E002220FC /* AppDelegate.swift */,
 				CE2959BF1F8CE60E002220FC /* Assets.xcassets */,
 				CE2959C11F8CE60E002220FC /* LaunchScreen.storyboard */,
@@ -162,31 +222,6 @@
 			path = CamdoraSwiftTests;
 			sourceTree = "<group>";
 		};
-		CE2959D91F8CEAED002220FC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CE2959DA1F8CEAEE002220FC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CE2959DD1F8CEB2F002220FC /* Main */,
-				CE4B5B8A1F8DB2AC00FD053B /* Base */,
-				CE4B5B901F8DB5E800FD053B /* Account */,
-				CE4B5B911F8DB5E800FD053B /* Home */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CE2959DB1F8CEAEE002220FC /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CE2959DC1F8CEAEE002220FC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,20 +229,8 @@
 				CE04AA591FA3161D001EC56C /* Hud */,
 				CE5A8FF81F8F6C9F003540E6 /* NetWork */,
 				CE36A4DF1F8E3A1F00F0CECF /* Transition */,
-				CE2959E41F8CFA6A002220FC /* DFCommont.swift */,
-				CE2959E61F8CFC9D002220FC /* Bundle+Extensions.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		CE2959DD1F8CEB2F002220FC /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				CE2959E01F8CF8C1002220FC /* main.json */,
-				CE2959DE1F8CEB57002220FC /* DFTabBarController.swift */,
-				CE4B5B961F8DCA5900FD053B /* DFComposeButton.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		CE36A4DF1F8E3A1F00F0CECF /* Transition */ = {
@@ -217,31 +240,6 @@
 				CE36A4E21F8E3A6800F0CECF /* RootTransitionAnimator.swift */,
 			);
 			path = Transition;
-			sourceTree = "<group>";
-		};
-		CE4B5B8A1F8DB2AC00FD053B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				CE4B5B8B1F8DB2C900FD053B /* DFBaseViewController.swift */,
-				CE4B5B8D1F8DB2F500FD053B /* DFNavigationController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		CE4B5B901F8DB5E800FD053B /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				CE4B5B921F8DB61900FD053B /* DFMeViewController.swift */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		CE4B5B911F8DB5E800FD053B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				CE4B5B941F8DB63800FD053B /* DFHomeViewController.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		CE5A8FF81F8F6C9F003540E6 /* NetWork */ = {
@@ -336,7 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2959E11F8CF8C1002220FC /* main.json in Resources */,
+				6F49154323CF01D70078723F /* main.json in Resources */,
 				CE2959C31F8CE60E002220FC /* LaunchScreen.storyboard in Resources */,
 				CE2959C01F8CE60E002220FC /* Assets.xcassets in Resources */,
 			);
@@ -404,20 +402,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4B5B8C1F8DB2C900FD053B /* DFBaseViewController.swift in Sources */,
+				6F49153F23CEEB7D0078723F /* UIColor+Utility.swift in Sources */,
 				CE04AA5B1FA316A0001EC56C /* DFHud.swift in Sources */,
-				CE2959E51F8CFA6A002220FC /* DFCommont.swift in Sources */,
+				6F49153223CEBF6E0078723F /* DFRootViewController.swift in Sources */,
+				6F49154123CEFEB70078723F /* Bundle+Extensions.swift in Sources */,
 				CE36A4E11F8E3A4400F0CECF /* RootNavigationTransition.swift in Sources */,
+				6F49153923CEE7CA0078723F /* DFMacros.swift in Sources */,
+				6F49153D23CEEAD10078723F /* DFFontMacros.swift in Sources */,
 				CE2959B91F8CE60E002220FC /* AppDelegate.swift in Sources */,
-				CE4B5B971F8DCA5900FD053B /* DFComposeButton.swift in Sources */,
-				CE2959DF1F8CEB57002220FC /* DFTabBarController.swift in Sources */,
-				CE4B5B931F8DB61900FD053B /* DFMeViewController.swift in Sources */,
-				CE2959E71F8CFC9E002220FC /* Bundle+Extensions.swift in Sources */,
+				6F49153B23CEEAC10078723F /* DFColorMacros.swift in Sources */,
+				6F49153023CEBEC50078723F /* DFRootTabBarController.swift in Sources */,
+				6F49153723CEE19C0078723F /* DFIphoneType.swift in Sources */,
 				CE04AA5E1FA33837001EC56C /* UITableView+Empty.swift in Sources */,
+				6F49154523CF01DE0078723F /* DFComposeButton.swift in Sources */,
 				CE36A4E31F8E3A6800F0CECF /* RootTransitionAnimator.swift in Sources */,
 				CE5A8FFA1F8F6D91003540E6 /* DFNetManager.swift in Sources */,
-				CE4B5B8E1F8DB2F500FD053B /* DFNavigationController.swift in Sources */,
-				CE4B5B951F8DB63800FD053B /* DFHomeViewController.swift in Sources */,
+				6F49153423CEBF980078723F /* DFRootNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

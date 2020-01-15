@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        window?.backgroundColor = UIColor.white
         
-        window?.rootViewController = DFNavigationController(rootViewController: DFTabBarController())
+        window?.rootViewController = DFRootTabBarController()
         
         window?.makeKeyAndVisible()
         

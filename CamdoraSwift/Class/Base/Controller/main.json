@@ -1,11 +1,11 @@
 [
   {
-    "clsName" : "DFHomeViewController",
+    "clsName" : "DFRootViewController",
     "imageName" : "home_normal"
   },
 
   {
-    "clsName" : "DFMeViewController",
+    "clsName" : "DFRootViewController",
     "imageName" : "account_normal"
   }
 ]

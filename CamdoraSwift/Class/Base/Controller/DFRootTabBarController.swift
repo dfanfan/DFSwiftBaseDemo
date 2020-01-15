@@ -1,57 +1,40 @@
 //
-//  DFTabBarController.swift
+//  DFRootTabBarController.swift
 //  CamdoraSwift
 //
-//  Created by user on 10/10/17.
-//  Copyright © 2017年 Fanfan. All rights reserved.
+//  Created by dff on 2020/1/15.
+//  Copyright © 2020 Fanfan. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-class DFTabBarController: UITabBarController {
+class DFRootTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupChildControllers()
-        
-        setupComposeButton()
-        
         setupTabProperty()
-        
     }
-
-    fileprivate lazy var composeButton: DFComposeButton = DFComposeButton()
 }
 
-
-//TODO:逻辑代码
-extension DFTabBarController {
-    @objc func clickComposeButton() {
-        print("=====")
-    }
-    
-}
-
-
-extension DFTabBarController {
+extension DFRootTabBarController {
     fileprivate func setupTabProperty() {
         tabBar.isTranslucent = false
         tabBar.backgroundColor = UIColor.white
-        tabBar.tintColor = positiveColor
+        tabBar.tintColor = colorTheme
     }
     
-    fileprivate func setupComposeButton() {
-        tabBar.addSubview(composeButton)
-        composeButton.snp.makeConstraints { (make) in
-            make.width.height.equalTo(60)
-            make.centerX.equalTo(tabBar)
-            make.top.equalTo(-12)
-        }
-        composeButton.addTarget(self, action: #selector(clickComposeButton), for: UIControlEvents.touchUpInside)
-        
-    }
+//    fileprivate func setupComposeButton() {
+//        tabBar.addSubview(composeButton)
+//        composeButton.snp.makeConstraints { (make) in
+//            make.width.height.equalTo(60)
+//            make.centerX.equalTo(tabBar)
+//            make.top.equalTo(-12)
+//        }
+//        composeButton.addTarget(self, action: #selector(clickComposeButton), for: UIControlEvents.touchUpInside)
+//
+//    }
     
     fileprivate func setupChildControllers() {
         
@@ -77,17 +60,14 @@ extension DFTabBarController {
     }
     
     private func controller(dict: [String : String]) -> UIViewController {
-        guard let clsName = dict["clsName"], let imageName = dict["imageName"], let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? DFBaseViewController.Type else {
+        guard let clsName = dict["clsName"], let imageName = dict["imageName"], let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type else {
             return UIViewController()
         }
         let vc = cls.init()
         vc.tabBarItem.image = UIImage(named: imageName)
         vc.tabBarItem.selectedImage = UIImage(named: imageName + "_pre")
-        var leftOffset:CGFloat = 15
-        if clsName == "DFHomeViewController" {
-            leftOffset = -15
-        }
-        let insets = UIEdgeInsets(top: 6, left: leftOffset, bottom: -6, right: -leftOffset)
+        
+        let insets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
         
         vc.tabBarItem.imageInsets = insets
         

@@ -48,7 +48,6 @@ class DFNetManager: NSObject {
     
 //    var baseUrl: String? = nil
     lazy var headers : HTTPHeaders = [:]
-    lazy var taskArray : NSMutableArray = [DataRequest]() as! NSMutableArray
     
     private var sessionManager = Alamofire.SessionManager.default
 }
@@ -69,14 +68,7 @@ extension DFNetManager {
         
         let methodType = changeRequest(dfRequestType: type)
         
-        var sessionTask : DataRequest? = nil
-        sessionTask = sessionManager.request(urlString, method: methodType, parameters: parameters, headers: headers).responseJSON {[weak self] (response) in
-            
-            if let sessionTask = sessionTask {
-                objc_sync_enter(self as Any)
-                self?.taskArray.remove(sessionTask)
-                objc_sync_exit(self as Any)
-            }
+        sessionManager.request(urlString, method: methodType, parameters: parameters, headers: headers).responseJSON { (response) in
             
             if let error = response.error {
                 failureBlock(error)
@@ -86,14 +78,6 @@ extension DFNetManager {
                 successBlock(json)
             }
         }
-        
-        guard let sessionTask1 = sessionTask else {
-            return;
-        }
-        objc_sync_enter(self as Any)
-        taskArray.addObjects(from: [sessionTask1])
-        print("========= %d", taskArray.count)
-        objc_sync_exit(self as Any)
     }
     
     
@@ -163,42 +147,6 @@ extension DFNetManager {
     }
 }
 
-extension DFNetManager {
-    func df_cancelAll () {
-        objc_sync_enter(self)
-        for sessionTask in taskArray {
-            (sessionTask as! DataRequest).cancel()
-        }
-        taskArray.removeAllObjects()
-        objc_sync_exit(self)
-
-    }
-    
-    func df_cancelRequestWithUrl(url : String?) {
-        guard let url = url else {
-            return
-        }
-        objc_sync_enter(self)
-        for sessionTask in taskArray {
-            let tempTask : DataRequest = sessionTask as! DataRequest
-            guard let tempUrl = tempTask.request?.url?.absoluteString else {
-                continue
-            }
-            if tempUrl.hasPrefix(url) {
-                tempTask.cancel()
-                taskArray.remove(tempTask)
-                break
-            }
-        }
-        objc_sync_exit(self)
-    }
-    
-//    func df_cancelWithTask(task : DataRequest) {
-//        task.cancel()
-//
-//
-//    }
-}
 
 
 
